@@ -14,7 +14,7 @@ let userPickALetter = String(prompt("Choose a Letter!"));
 //  - Find all the users who's name contains the letter 
 
 let foundUsers = users.filter(function (user)
-{ return user.name.includes(userPickALetter)
+{ return user.name.tolowerCase().includes(userPickALetter.toLowerCase())
 
 })
 
